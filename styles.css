@@ -176,6 +176,40 @@ body {
 
 .hidden { display: none !important; }
 
+/* Top series navigation */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: color 0.15s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-pill:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.nav-companion {
+  color: var(--text);
+}
+
 /* Hero */
 .hero {
   display: grid;
